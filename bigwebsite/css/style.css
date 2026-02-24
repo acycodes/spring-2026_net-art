@@ -1,0 +1,85 @@
+/* Make page huge */
+#giant-paper {
+    width: 2500px;
+    height: 2500px;
+    background-color: #f4f1e8;
+    position: relative;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 48px;
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Intro paragraph */
+.intro {
+    font-size: 20px;
+    margin: 40px;
+    text-align: center;
+    color: #333;
+}
+
+/* Span styling */
+.highlight {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Secret box */
+.secret-box {
+    border: 4px dashed purple;
+    width: 300px;
+    padding: 20px;
+    margin: 100px;
+    background-color: lavender;
+}
+
+/* Floating transparent note */
+.floating-note {
+    position: absolute;
+    top: 500px;
+    left: 1600px;
+    opacity: 0.4;
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Far away section */
+#far-away {
+    position: absolute;
+    top: 1700px;
+    left: 1850px;
+    color: darkgreen;
+    font-size: 24px;
+    border: 3px solid green;
+    padding: 30px;
+    background-color: #dfffdc;
+}
+
+/* Image area */
+.image-area {
+    position: absolute;
+    top: 1600px;
+    left: 100px;
+    text-align: center;
+}
+
+/* Bottom secret */
+.bottom-secret {
+    position: absolute;
+    top: 2400px;
+    left: 1000px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
