@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+.title{
+    margin-top:20px;
+}
+
+.instructions{
+    opacity:0.7;
+}
+
+/* screen area */
+.screen{
+    width:100%;
+    height:80vh;
+    position:relative;
+    overflow:hidden;
+}
+
+/* circles */
+.circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    position:absolute;
+    background:linear-gradient(45deg, cyan, magenta);
+    opacity:0.8;
+
+    /* smooth transition */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* starting positions */
+.circle:nth-of-type(1){ top:10%; left:10%; }
+.circle:nth-of-type(2){ top:50%; left:20%; }
+.circle:nth-of-type(3){ top:30%; left:70%; }
+.circle:nth-of-type(4){ top:70%; left:60%; }
+
+/* animation */
+@keyframes float {
+    0%{
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    50%{
+        transform: translate(200px,-150px) rotate(180deg);
+    }
+
+    100%{
+        transform: translate(-100px,200px) rotate(360deg);
+    }
+}
+
+/* hover starts screensaver */
+.screen:hover .circle{
+    animation: float 10s infinite alternate ease-in-out;
+}
+
+/* click speeds it up */
+.screen:active .circle{
+    animation-duration: 3s;
+}
