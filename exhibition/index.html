@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Infinite Loop: Meme Aesthetics & Early Web Absurdity</title>
+    <style>
+        /* DESIGN CHOICES:
+           The design evokes the chaotic, low-fidelity, and repetitive nature 
+           of early internet meme culture. Monospace fonts, high-contrast neon 
+           colors on dark backgrounds, and repeating striped background patterns 
+           reflect the aesthetics of the late 90s and 2000s web.
+        */
+        body {
+            background-color: #000080; 
+            color: #FFFFFF;
+            font-family: 'Courier New', Courier, monospace; /* Typewriter/Code aesthetic */
+            margin: 0;
+            padding: 20px;
+            /* A repeating background to visually echo the theme of looping/repetition */
+            background-image: repeating-linear-gradient(
+                45deg,
+                #000033,
+                #000033 20px,
+                #000044 20px,
+                #000044 40px
+            );
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 4px dashed #FF00FF; 
+            padding: 40px;
+            box-shadow: 12px 12px 0px #00FFFF; 
+        }
+
+        h1 {
+            color: #FFFF00; 
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2.5em;
+            text-shadow: 3px 3px #FF00FF;
+            margin-bottom: 5px;
+        }
+
+        .curator {
+            text-align: center;
+            font-style: italic;
+            color: #00FFFF;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        .curatorial-text {
+            line-height: 1.7;
+            font-size: 1.1em;
+            border-left: 5px solid #FFFF00;
+            padding-left: 20px;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+        }
+
+        .curatorial-text p {
+            margin-top: 0;
+        }
+
+        .artwork {
+            border: 2px solid #00FFFF;
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: #111;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .artwork:hover {
+            transform: scale(1.02); /* Slight pop-out effect to mimic interactivity */
+            border-color: #FF00FF;
+            box-shadow: 0px 0px 15px #FF00FF;
+        }
+
+        .artwork-header h2 {
+            color: #FF00FF;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .artwork-meta {
+            color: #FFFF00;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            border-bottom: 1px dotted #555;
+            padding-bottom: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 3px solid #333;
+            background-color: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .artwork-description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+
+        .link-btn {
+            display: inline-block;
+            background-color: #00FFFF;
+            color: #000;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .link-btn:hover {
+            background-color: #FF00FF;
+            color: #FFF;
+            border: 2px solid #FFFF00;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>The Infinite Loop: Meme Aesthetics & Early Web Absurdity</h1>
+    
+    <div class="curator">Exhibition curated by Andrew C.</div>
+
+    <div class="curatorial-text">
+        <p>Net art is art made for and experienced on the internet. While many net art projects focus on interactivity or complex ideas, some works use humor, repetition, and online aesthetics to create artistic experiences. "Online aesthetics" refers to the visual culture dictated by the technical limitations of the early web—think low-fidelity pixel art, high-contrast digital colors, and small file sizes that forced animations into tight, endless loops. Three famous examples of this meme-style net art are Nyan Cat, Hamster Dance, and Badger Badger Badger.</p>
+        
+        <p>All three were created specifically for the web, meaning their medium is entirely essential to the work. A defining strategy of this era was the internet's fascination with dancing characters. Stripped of traditional plotlines or linear narratives, these dancing loops reduce the art to pure visual and auditory rhythm. This repetition is part of the art—it highlights the chaotic, hypnotic, and playful nature of early online culture. Similar to the rise of electronic and techno music loops during the same era, these infinite dances offer a trancelike, absurd experience that provides a sense of comfort or hyper-focus against a barrage of information. They share a low-fidelity, messy aesthetic that reflects early internet humor and makes them fun to share and remix.</p>
+        
+        <p>Humor and absurdity are central to these works. The enjoyment comes from the ridiculous, endless animations and music, which also comment on the repetitive and attention-grabbing nature of internet content. While they may not be interactive like traditional net art, they engage viewers through sharing, remixing, and repeated viewing. </p>
+    </div>
+
+    <div class="artwork">
+        <div class="artwork-header">
+            <h2>Nyan Cat</h2>
+        </div>
+        <div class="artwork-meta">
+            Christopher Torres | 2011
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.nyan.cat/" title="Nyan Cat" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="artwork-description">
+            A pixelated Pop-Tart cat flies endlessly through space to a looping chiptune song. This whimsical animation turns simple repetition and absurdity into an iconic piece of internet-born net art.
+        </div>
+        <a href="https://www.nyan.cat/" target="_blank" class="link-btn">Experience NYAN.CAT!</a>
+    </div>
+
+    <div class="artwork">
+        <div class="artwork-header">
+            <h2>Hamster Dance</h2>
+        </div>
+        <div class="artwork-meta">
+            Deidre LaCarte | 1997
+        </div>
+        <div class="video-container">
+            <iframe src="https://hampsterdance.ytmnd.com/" title="Hamster Dance" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="artwork-description">
+            Rows of animated hamsters dance to a high-speed, looping song. Its chaotic visuals and hypnotic repetition highlight the playful creativity of early internet culture.
+        </div>
+        <a href="https://hampsterdance.ytmnd.com/" target="_blank" class="link-btn">Experience YTMND - The Original Hampster Dance</a>
+    </div>
+
+    <div class="artwork">
+        <div class="artwork-header">
+            <h2>Badger Badger Badger</h2>
+        </div>
+        <div class="artwork-meta">
+            Jonti “Weebl” Picking | 2003
+        </div>
+        <div class="video-container">
+            <iframe src="https://archive.org/embed/flash_badger" title="Badger Badger Badger" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="artwork-description">
+            A Flash animation of dancing badgers, mushrooms, and a snake repeats endlessly with a catchy chant. This absurd, looping experience exemplifies meme-style net art and web-native humor.
+        </div>
+        <a href="https://archive.org/details/flash_badger" target="_blank" class="link-btn">Experience Badger via Internet Archive</a>
+    </div>
+
+</div>
+
+</body>
+</html>
