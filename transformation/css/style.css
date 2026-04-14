@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.calm {
+  background-color: #e6f2ff;
+  color: #003366;
+}
+
+body.chaos {
+  background-color: #0d0000;
+  color: #ff3333;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  top: 40%;
+  transition: transform 0.2s ease;
+}
+
+h1 {
+  transition: transform 0.1s;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
