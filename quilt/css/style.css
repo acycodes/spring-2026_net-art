@@ -20,8 +20,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
 }
 
+.tile:hover {
+    filter: brightness(1.2);
+}
 
 /* 1 */
 .square {
